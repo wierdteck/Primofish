@@ -109,7 +109,7 @@ inline bool PieceIsWhite(const int piece)
     return false;
 }
 
-inline int move(const unsigned long long tempPieceMoves) {
+inline int deleteAttacks(const unsigned long long tempPieceMoves) {
     return tempPieceMoves | (tempPieceMoves >> 8);
 }
 
